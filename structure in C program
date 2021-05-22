@@ -1,0 +1,46 @@
+//structures in C
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+struct books
+{
+	char title[50];
+	char author[50];
+	char subject[100];
+	int book_id;
+};
+int main()
+{
+	struct books book1; /*declare book1 of type book*/
+	struct books book2; /*declare book2 of type book*/
+	
+	/* book 1 specifiction*/
+	strcpy(book1.title,"Wings of fire");
+	strcpy(book1.author,"A.P.J Abdul Kalam");
+	strcpy(book1.subject,"biography");
+	book1.book_id=1;
+	
+	/*book 2 specification*/
+	strcpy(book2.title,"shiva trilogy");
+	strcpy(book2.author,"Amish tripathi");
+	strcpy(book2.subject,"life of gods");
+	book2.book_id=2;
+	
+	/*print book1 info*/
+	printf("\n\nBook title:%s",book1.title);
+printf("\nBook author:%s",book1.author);
+printf("\nBook subject:%s",book1.subject);
+printf("\nBook book id:%d",book1.book_id);
+
+
+/*print book2 info*/
+printf("\n\nBook title:%s",book2.title);
+printf("\nBook author:%s",book2.author);
+printf("\nBook subject:%s",book2.subject);
+printf("\nBook id:%d",book2.book_id);
+getch();
+}
+
+
+
+
